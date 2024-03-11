@@ -1,11 +1,11 @@
 # Nougat-bot
 
-This repo contains code to deploy Facebook's [Nougat](https://github.com/facebookresearch/nougat) model as a Modal function. In addition, there is a Telegram bot that takes an image sent to the chat and passes it to the deployed model for OCR. The results are returned in the chat.
+This repo contains code to deploy Facebook's [Nougat](https://github.com/facebookresearch/nougat) model as a [Modal](https://modal.com) function. In addition, there is a Telegram bot that takes an image sent to the chat and passes it to the deployed model for OCR. The results are returned in the chat.
 
 ## Installation
 
 1. Create a Telegram bot using the [@BotFather](https://t.me/botfather)
-2. Create a `.env` file based on `.env.example` and add the necessary token and ids.
+2. Create a `.env` file based on `.env.example` and add the necessary token and ids. Telegram ids can be found out by sending a message to [@getidsbot](https://t.me/GetIDsBot).
 3. Run or inspect the following script to deploy model in Modal and start Telegram bot.
 ```
 ./deploy.sh
